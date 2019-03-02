@@ -1,0 +1,6 @@
+.image_off, #cart-logo:hover .image_on{
+   display:none
+}
+.image_on, #cart-logo:hover .image_off{
+   display:block
+}
