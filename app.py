@@ -35,7 +35,7 @@ def fw19():
     return render_template("fw19.html")
 
 #near me
-@app.route('/fw18')
+@app.route('/fw18', methods=["GET", "POST"])
 def fw18():
     global phone_number
     global zipcode
@@ -47,7 +47,7 @@ def fw18():
     return render_template("fw18.html")
 
 #hotlines
-@app.route('/ss19')
+@app.route('/ss19', methods=["GET", "POST"])
 def ss19():
     global phone_number
     if request.method == 'POST':
