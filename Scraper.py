@@ -22,7 +22,7 @@ def scraper(address):
         found = result.find("h2")
         name = found.find('a').text
         phone = result.find('span', attrs = {"data-bind":"text: phone_number"}).text
-        phone = phone.replace("-","")
+        phone = phone.replace("-"," ")
         places[name] = phone
         
     return places
