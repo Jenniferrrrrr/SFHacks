@@ -11,5 +11,3 @@ handlers:
 libraries:
 - name: ssl
   version: latest
-- name: ipaddress
-- version: latest
