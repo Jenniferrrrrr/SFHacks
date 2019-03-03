@@ -1,0 +1,16 @@
+/*.image_off, #cart-logo:hover .image_on{
+   display:none
+}
+.image_on, #cart-logo:hover .image_off{
+   display:block
+}
+a, a:active, a:focus #und:active, #und:focus{
+	outline: none;
+}*/
+
+/*.tooltip {
+	text-decoration: none; 
+	border-bottom: none;
+	color: #36c; 
+	outline: none; 
+}*/

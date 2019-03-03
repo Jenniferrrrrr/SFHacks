@@ -4,14 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Maison-Autelier</title>
 
-	<!-- Our Own CSS -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+	<link rel="stylesheet" href="/static/style.css">
+	<link rel="stylesheet" href="/static/bootstrap.min.css">
 	<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
-	<!-- Bootstrap Import -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="/static/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script style="type/script"> 
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -19,15 +23,15 @@
 		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand col-1" href="{{ url_for('home') }}">Autelier</a>
 		<ul class="navbar-nav col-10">
-			<li class="nav-item">
-				<a class="nav-link" href= "{{ url_for('fw19') }}">F/W - 19 Preview</a>
-			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="{{ url_for('ss19') }}">S/S - 19</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="{{ url_for('fw18') }}">F/W - 18</a>
-			</li>
+	      		<li class="nav-item">
+	        	  <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Online Resources" href= "{{ url_for('fw19') }}">F/W - 19 Preview</a>
+	      		</li>
+			    <li class="nav-item">
+			      <a class="nav-link active" data-toggle="tooltip" data-placement="bottom" title="Near Me" href="{{ url_for('ss19') }}">S/S - 19</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Hotlines" href="{{ url_for('fw18') }}">F/W - 18</a>
+			    </li>
 		</ul>
 		<ul class="navbar-nav col-1">
 			<li class="nav-item">
