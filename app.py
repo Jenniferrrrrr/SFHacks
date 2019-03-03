@@ -17,10 +17,10 @@ local_resources = {}
 
 @app.route('/')
 def home():
-    global local_resources
-    zipcode = getZipCode()
-    local_resources = Scraper.scraper(zipcode)
-    names = local_resources.keys() 
+    # global local_resources
+    # zipcode = getZipCode()
+    # local_resources = Scraper.scraper(zipcode)
+    # names = local_resources.keys() 
 
     return render_template('index.html')
 
@@ -28,8 +28,11 @@ def home():
 def about():
     return render_template('about.html')
  
-@app.route('/fw19')
+@app.route('/fw19', methods=["GET", "POST"])
 def fw19():
+    pn = "no phone number"
+    if request.method == 'POST':
+        pn = request.form
     return render_template("fw19.html")
 
 @app.route('/fw18')
