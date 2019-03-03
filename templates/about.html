@@ -20,25 +20,27 @@ $(function () {
 <body>
 	<div class="container-fluid">
 		<!-- navigation bar -->
-		<nav class="navbar sticky-top mb-5 navbar-expand-lg navbar-light bg-light">
-	  	  	<a class="navbar-brand col-1" href="{{ url_for('home') }}">Autelier</a>
-	    	<ul class="navbar-nav col-10">
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+	  	  	<a class="navbar-brand col-2" href="{{ url_for('home') }}">
+	  	  	<img src="/static/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+	  	  	Maison-Autelier</a>
+		<ul class="navbar-nav col-9">
 	      		<li class="nav-item">
 	        	  <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Online Resources" href= "{{ url_for('fw19') }}">F/W - 19 Preview</a>
 	      		</li>
 			    <li class="nav-item">
-			      <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Near Me" href="{{ url_for('ss19') }}">S/S - 19</a>
+			      <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Hotlines" href="{{ url_for('ss19') }}">S/S - 19</a>
 			    </li>
 			    <li class="nav-item">
-			      <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Hotlines" href="{{ url_for('fw18') }}">F/W - 18</a>
+			      <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Near Me" href="{{ url_for('fw18') }}">F/W - 18</a>
 			    </li>
-	    	</ul>
-	    	<ul class="navbar-nav col-1">
-			    <li class="nav-item active">
-			      <a class="nav-link" href="{{ url_for('about') }}">About</a>
-			    </li>
-	    	</ul>
-		</nav> 
+		</ul>
+		<ul class="navbar-nav col-1">
+			<li class="nav-item">
+				<a class="nav-link active" href="{{ url_for('about')}}">About</a>
+			</li>
+		</ul>
+		</nav>
 		<div class="px-3 py-3 pt-md-5 pb-md-4 text-center" style="margin-top: 140px; margin-bottom: 160px;">
 		  <h1 class="display-4 mt-md-5">Maison-Autelier</h1>
 		  <p class="lead col-md-6 mx-auto">Maison-Autelier is a timeless house of impeccable design founded in 1963 in Paris by two women. Since its inauguration, Maison-Autelier has prided itself on pushing the boundaries of haute couture and ready to wear collections, for women, by women. <p>

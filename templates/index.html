@@ -20,17 +20,19 @@ $(function () {
 <body>
 	<div class="container-fluid">
 	<!-- navigation bar -->
-	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand col-1" href="{{ url_for('home') }}">Autelier</a>
-		<ul class="navbar-nav col-10">
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+	  	  	<a class="navbar-brand col-2" href="{{ url_for('home') }}">
+	  	  	<img src="/static/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+	  	  	Maison-Autelier</a>
+		<ul class="navbar-nav col-9">
 	      		<li class="nav-item">
 	        	  <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Online Resources" href= "{{ url_for('fw19') }}">F/W - 19 Preview</a>
 	      		</li>
 			    <li class="nav-item">
-			      <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Near Me" href="{{ url_for('ss19') }}">S/S - 19</a>
+			      <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Hotlines" href="{{ url_for('ss19') }}">S/S - 19</a>
 			    </li>
 			    <li class="nav-item">
-			      <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Hotlines" href="{{ url_for('fw18') }}">F/W - 18</a>
+			      <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Near Me" href="{{ url_for('fw18') }}">F/W - 18</a>
 			    </li>
 		</ul>
 		<ul class="navbar-nav col-1">
@@ -38,7 +40,7 @@ $(function () {
 				<a class="nav-link" href="{{ url_for('about')}}">About</a>
 			</li>
 		</ul>
-	</nav>
+		</nav>
 	<img src="static/front-page.png" width="100%" height="100%" alt="">
 	</div>
 </body>
