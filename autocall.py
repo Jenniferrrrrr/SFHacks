@@ -10,7 +10,6 @@ def resources(dic):
     m = ""
     for item in dic:
         m = m + item + " at " + dic[item] + " , "
-    print(m)
     return m
 
 def call():
