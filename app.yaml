@@ -11,3 +11,5 @@ handlers:
 libraries:
 - name: ssl
   version: latest
+- name: ipinfo
+  verion: latest
