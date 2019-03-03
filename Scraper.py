@@ -4,9 +4,14 @@ import csv
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
+
 def scraper(address):
     places = {}
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    options = webdriver.ChromeOptions()
+    options.binary_location = '/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary'
+    options.add_argument('window-size=800x841')
+    options.add_argument('headless')
+    driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=options)
     driver.get("https://www.domesticshelters.org")
     time.sleep(2)
     # textbox
@@ -24,6 +29,4 @@ def scraper(address):
         phone = result.find('span', attrs = {"data-bind":"text: phone_number"}).text
         phone = phone.replace("-"," ")
         places[name] = phone
-        
     return places
-   
