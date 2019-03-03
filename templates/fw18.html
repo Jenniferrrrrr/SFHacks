@@ -4,30 +4,34 @@
 	<meta charset="UTF-8">
 	<title>Maison-Autelier</title>
 
-	<!-- Our Own CSS -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
-
-	<!-- Bootstrap Import -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/style.css">
+	<link rel="stylesheet" href="/static/bootstrap.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+	<script src="/static/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script style="type/script"> 
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 </head>
 <body>
 	<div class="container-fluid">
 	<!-- navigation bar -->
 	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand col-1" href="#">Autelier</a>
-	<ul class="navbar-nav col-10">
-					<li class="nav-item">
-							<a class="nav-link" href= "{{ url_for('fw19') }}">F/W - 19 Premier</a>
-					</li>
-			<li class="nav-item">
-					<a class="nav-link" href="{{ url_for('ss19') }}">S/S - 19</a>
-			</li>
-			<li class="nav-item">
-					<a class="nav-link" href="{{ url_for('fw18') }}">F/W - 18</a>
-			</li>
+			<a class="navbar-brand col-1" href="{{ url_for('home') }}">Autelier</a>
+	    	<ul class="navbar-nav col-10">
+	      		<li class="nav-item">
+	        	  <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Online Resources" href= "{{ url_for('fw19') }}">F/W - 19 Preview</a>
+	      		</li>
+			    <li class="nav-item">
+			      <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Near Me" href="{{ url_for('ss19') }}">S/S - 19</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link active" data-toggle="tooltip" data-placement="bottom" title="Hotlines" href="{{ url_for('fw18') }}">F/W - 18</a>
+			    </li>
 	</ul>
 	<ul class="navbar-nav col-1">
 			<li class="nav-item">
@@ -51,20 +55,20 @@
 				<div class="col-6 my-auto text-center">					
 					<div class="dropup align-self-center">
 					  <h2 class="col-4 mx-auto align-self-center" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    Name One
+					    Simplistic is The Key
 					  </h2>
 				  <div class="p-0 dropdown-menu" aria-labelledby="dropdownMenuButton" id="input2center">
-					 <form action="/fw19" method = "POST">
+					 <form action="/fw18" method = "POST">
 					 	<div class="input-group flex-nowrap">
 					  <div class="input-group-prepend">
 					    <span class="input-group-text" id="addon-wrapping"> 📞 </span>
-					  </div>
+					  </div>f
 				        <input class="form-control align-self-center" placeholder="Enter # for more info" type="text" name="phone_number"> 
 					</div>
 				    </form>
 				  </div>
 				</div>
-				<p class="col-6 mx-auto text-center">Descriptions: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, alias mollitia assumenda! Aspernatur aut harum saepe sapiente, a velit commodi, quaerat illo, necessitatibus tenetur quis molestiae dolores consequatur laboriosam.</p> <p class="col-6 mx-auto text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, alias mollitia assumenda! Aspernatur aut harum saepe sapiente, a velit commodi, quaerat illo, necessitatibus tenetur quis molestiae dolores consequatur laboriosam.</p ></div>
+				<p class="col-6 mx-auto text-center">We bring contemporary vibes into this dress through playful stripes and the juxtaposition of the dark black and light pink colors. This piece is the definition of modern women: soft, yet strong.</p ></div>
     			<div class="col-6"> <img src="/static/fw-18-1.jpg" width="700" height="800" alt=""> </div>
 			</div>
 		</div>
@@ -75,10 +79,10 @@
     			<div class="col-6 my-auto mx-auto text-center"> 
     				<div class="dropup align-self-center">
 					  <h2 class="col-4 mx-auto align-self-center" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    Name One
+					    Elegance
 					  </h2>
 				  <div class="p-0 dropdown-menu" aria-labelledby="dropdownMenuButton" id="input2center">
-					 <form action="/fw19" method = "POST">
+					 <form action="/fw18" method = "POST">
 					 	<div class="input-group flex-nowrap">
 					  <div class="input-group-prepend">
 					    <span class="input-group-text" id="addon-wrapping"> 📞 </span>
@@ -88,7 +92,8 @@
 				    </form>
 				  </div>
 				</div>
-    				<p class="col-9 mx-auto text-center">Descriptions: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, alias mollitia assumenda! Aspernatur aut harum saepe sapiente, a velit commodi, quaerat illo, necessitatibus tenetur quis molestiae dolores consequatur laboriosam.</p></div>
+    				<p class="col-9 mx-auto text-center">Casual wear? Piece for a cocktail party? Something for going to the office? You name it, this jumpsuit has it all. 
+						</p></div>
 			</div>
 		</div>
 	</div>
