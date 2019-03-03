@@ -12,4 +12,4 @@ libraries:
 - name: ssl
   version: latest
 - name: ipinfo
-  verion: latest
+  verion: 1.1.0
