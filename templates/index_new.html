@@ -1,0 +1,32 @@
+
+{% extends 'bootstrap/base.html' %}
+{% block navbar %}
+    <div class="navbar navbar-fixed-top">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand col-1" href="#">Autelier</a>
+                <ul class="navbar-nav col-10">
+                        <li class="nav-item">
+                            <a class="nav-link" href= "{{ url_for('fw19') }}">F/W - 19 Premier</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('ss19') }}">S/S - 19</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('fw18') }}">F/W - 18</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav col-1">
+                    <li class="nav-item">
+        <!--     		   <a class="navbar-brand" id="cart-logo" href="#">
+                        <img src="images/cart_grey.png"  width="30" height="30" id="image_on" class="image_on" alt="">
+                        <img src="images/cart_black.png"  width="30" height="30" id="image_off" class="image_off" alt="">
+                    </a> -->
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('about')}}">About</a>
+                    </li>
+                </ul>
+        </nav>
+    </div>
+{% endblock navbar %}   

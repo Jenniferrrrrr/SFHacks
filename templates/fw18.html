@@ -5,7 +5,7 @@
 	<title>Maison-Autelier</title>
 
 	<!-- Our Own CSS -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 
 	<!-- Bootstrap Import -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,31 +16,31 @@
 <body>
 	<div class="container-fluid">
 	<!-- navigation bar -->
-	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-  	  	<a class="navbar-brand col-1" href="#">Autelier</a>
-    	<ul class="navbar-nav col-10">
-      		<li class="nav-item">
-        	  <a class="nav-link" href="fw19.html">F/W - 19 Premier</a>
-      		</li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="ss19.html">S/S - 19</a>
-		    </li>
-		    <li class="nav-item active">
-		      <a class="nav-link" href="fw18.html">F/W - 18</a>
-		    </li>
-    	</ul>
-    	<ul class="navbar-nav col-1">
-    		<li class="nav-item">
-<!--     		   <a class="navbar-brand" id="cart-logo" href="#">
-			    <img src="images/cart_grey.png"  width="30" height="30" id="image_on" class="image_on" alt="">
-			    <img src="images/cart_black.png"  width="30" height="30" id="image_off" class="image_off" alt="">
-			  </a> -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand col-1" href="#">Autelier</a>
+	<ul class="navbar-nav col-10">
+					<li class="nav-item">
+							<a class="nav-link" href= "{{ url_for('fw19') }}">F/W - 19 Premier</a>
+					</li>
+			<li class="nav-item">
+					<a class="nav-link" href="{{ url_for('ss19') }}">S/S - 19</a>
 			</li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="about.html">About</a>
-		    </li>
-    	</ul>
-	</nav>
+			<li class="nav-item">
+					<a class="nav-link" href="{{ url_for('fw18') }}">F/W - 18</a>
+			</li>
+	</ul>
+	<ul class="navbar-nav col-1">
+			<li class="nav-item">
+<!--                <a class="navbar-brand" id="cart-logo" href="#">
+					<img src="images/cart_grey.png"  width="30" height="30" id="image_on" class="image_on" alt="">
+					<img src="images/cart_black.png"  width="30" height="30" id="image_off" class="image_off" alt="">
+			</a> -->
+	</li>
+			<li class="nav-item">
+					<a class="nav-link" href="{{ url_for('about')}}">About</a>
+			</li>
+	</ul>
+</nav>
 		<div class="px-3 py-3 pt-md-5 pb-md-4 mt-5 text-center">
 		<h1 class="display-4">Fall Winter 2018 </h1>
 		<p class="lead col-md-6 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nobis illum, fugiat cupiditate explicabo. Necessitatibus numquam nam nesciunt eaque molestias. Nesciunt dicta soluta laboriosam illum voluptate nemo aliqui!</p>
