@@ -24,5 +24,6 @@ def scraper(address):
         phone = result.find('span', attrs = {"data-bind":"text: phone_number"}).text
         phone = phone.replace("-","")
         places[name] = phone
+        
+    return places
    
-scraper("94720") #Replace this with the user's address
