@@ -7,3 +7,9 @@ handlers:
   static_dir: static
 - url: /.*
   script: app.app
+
+libraries:
+- name: ssl
+  version: latest
+- name: ipaddress
+- version: latest
