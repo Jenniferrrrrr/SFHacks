@@ -10,12 +10,10 @@ google-cloud-storage==1.14.0
 google-resumable-media==0.3.2
 googleapis-common-protos==1.5.8
 idna==2.8
-ipinfo==1.1.0
 itsdangerous==1.1.0
 Jinja2==2.10
 MarkupSafe==1.1.1
 protobuf==3.7.0
-python==3.7.2
 pyasn1==0.4.5
 pyasn1-modules==0.2.4
 pytz==2018.9
