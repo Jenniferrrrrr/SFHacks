@@ -11,5 +11,3 @@ handlers:
 libraries:
 - name: ssl
   version: latest
-- name: ipinfo
-  verion: 1.1.0
