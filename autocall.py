@@ -22,7 +22,3 @@ def call(ipadress):
     client = Client(api_keys["id"], api_keys["key"])
     message = "Here are local resources that you can find help from: " + resources(dictionary)
     client.calls.create(to='+15109449663',from_='+16107569992', url="https://twimlets.com/message?" + urlencode({'Message': message}))
-
-if __name__ == '__main__':
-    call(ipadress)
-
