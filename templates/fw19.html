@@ -16,31 +16,25 @@
 <body>
 	<div class="container-fluid">
 		<!-- navigation bar -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  	  	<a class="navbar-brand col-1" href="#">Autelier</a>
-    	<ul class="navbar-nav col-10">
-      		<li class="nav-item">
-        	  <a class="nav-link" href= "{{ url_for('fw19') }}">F/W - 19 Premier</a>
-      		</li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="{{ url_for('ss19') }}">S/S - 19</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="{{ url_for('fw18') }}">F/W - 18</a>
-		    </li>
-    	</ul>
-    	<ul class="navbar-nav col-1">
-    		<li class="nav-item">
-<!--     		   <a class="navbar-brand" id="cart-logo" href="#">
-			    <img src="images/cart_grey.png"  width="30" height="30" id="image_on" class="image_on" alt="">
-			    <img src="images/cart_black.png"  width="30" height="30" id="image_off" class="image_off" alt="">
-			  </a> -->
-			</li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="{{ url_for('about')}}">About</a>
-		    </li>
-    	</ul>
-	</nav>
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+	  	  	<a class="navbar-brand col-1" href="#">Autelier</a>
+	    	<ul class="navbar-nav col-10">
+	      		<li class="nav-item">
+	        	  <a class="nav-link" href= "{{ url_for('fw19') }}">F/W - 19 Premier</a>
+	      		</li>
+			    <li class="nav-item">
+			      <a class="nav-link" href="{{ url_for('ss19') }}">S/S - 19</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link" href="{{ url_for('fw18') }}">F/W - 18</a>
+			    </li>
+	    	</ul>
+	    	<ul class="navbar-nav col-1">
+			    <li class="nav-item">
+			      <a class="nav-link" href="{{ url_for('about')}}">About</a>
+			    </li>
+	    	</ul>
+		</nav>
 		<div class="px-3 py-3 pt-md-5 pb-md-4 mt-5 text-center">
 		  <h1 class="display-4">Fall Winter 2019 Premier</h1>
 		  <p class="lead col-md-6 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nobis illum, fugiat cupiditate explicabo. Necessitatibus numquam nam nesciunt eaque molestias. Nesciunt dicta soluta laboriosam illum voluptate nemo aliqui!</p>
@@ -49,16 +43,17 @@
 		<div class="mt-4 bg-light">
 			<div class="row">
 				<div class="col-7 my-auto text-center"><h2>Name One</h2><p class="col-6 mx-auto text-center">Descriptions: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, alias mollitia assumenda! Aspernatur aut harum saepe sapiente, a velit commodi, quaerat illo, necessitatibus tenetur quis molestiae dolores consequatur laboriosam.</p> <p class="col-6 mx-auto text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, alias mollitia assumenda! Aspernatur aut harum saepe sapiente, a velit commodi, quaerat illo, necessitatibus tenetur quis molestiae dolores consequatur laboriosam.</p ></div>
-    			<div class="col-5"> <img src="../images/fw-19-1.jpg" width="650" height="900" alt=""> </div>
-			</div>
+    			<div class="col-5"> <img src="/static/fw-19-1.jpg" width="650" height="900" > </div>
+    		</div>
 		</div>
 		<!-- Name Two -->
 		<div class="mx-auto">
 			<div class="row">
-				<div class="col-6"><img src="../images/fw-19-2.jpg" width="650" height="900" alt=""></p></div>
-    			<div class="col-6 my-auto mx-auto text-center"> <h2 class="col-9 mx-auto text-center">Name Two</h2><p class="col-9 mx-auto text-center">Descriptions: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, alias mollitia assumenda! Aspernatur aut harum saepe sapiente, a velit commodi, quaerat illo, necessitatibus tenetur quis molestiae dolores consequatur laboriosam.</p></div></div>
+				<div class="col-6"><img src="/static/fw-19-2.jpg" width="650" height="900" alt=""></p></div>
+    			<div class="col-6 my-auto mx-auto text-center"> <h2 class="col-9 mx-auto text-center">Name Two</h2><p class="col-9 mx-auto text-center">Descriptions: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, alias mollitia assumenda! Aspernatur aut harum saepe sapiente, a velit commodi, quaerat illo, necessitatibus tenetur quis molestiae dolores consequatur laboriosam.</p></div>
 			</div>
 		</div>
 		<!-- <img src="../images/r1.png" alt=""> -->
+	</div>
 </body>
 </html>

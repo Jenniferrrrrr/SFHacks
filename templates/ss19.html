@@ -16,29 +16,23 @@
 <body>
 	<div class="container-fluid">
 	<!-- navigation bar -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand col-1" href="#">Autelier</a>
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand col-1" href="#">Autelier</a>
 		<ul class="navbar-nav col-10">
-						<li class="nav-item">
-								<a class="nav-link" href= "{{ url_for('fw19') }}">F/W - 19 Premier</a>
-						</li>
-				<li class="nav-item">
-						<a class="nav-link" href="{{ url_for('ss19') }}">S/S - 19</a>
-				</li>
-				<li class="nav-item">
-						<a class="nav-link" href="{{ url_for('fw18') }}">F/W - 18</a>
-				</li>
+			<li class="nav-item">
+				<a class="nav-link" href= "{{ url_for('fw19') }}">F/W - 19 Premier</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{ url_for('ss19') }}">S/S - 19</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{ url_for('fw18') }}">F/W - 18</a>
+			</li>
 		</ul>
 		<ul class="navbar-nav col-1">
-				<li class="nav-item">
-	<!--                <a class="navbar-brand" id="cart-logo" href="#">
-						<img src="images/cart_grey.png"  width="30" height="30" id="image_on" class="image_on" alt="">
-						<img src="images/cart_black.png"  width="30" height="30" id="image_off" class="image_off" alt="">
-				</a> -->
-		</li>
-				<li class="nav-item">
-						<a class="nav-link" href="{{ url_for('about')}}">About</a>
-				</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{ url_for('about')}}">About</a>
+			</li>
 		</ul>
 		</nav>
 	<div class="px-3 py-3 pt-md-5 pb-md-4 mt-5 text-center">
@@ -49,17 +43,16 @@
 		<div class="mt-4 bg-light">
 			<div class="row">
 				<div class="col-6 my-auto text-center"><h2>Name One</h2><p class="col-6 mx-auto text-center">Descriptions: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, alias mollitia assumenda! Aspernatur aut harum saepe sapiente, a velit commodi, quaerat illo, necessitatibus tenetur quis molestiae dolores consequatur laboriosam.</p> <p class="col-6 mx-auto text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, alias mollitia assumenda! Aspernatur aut harum saepe sapiente, a velit commodi, quaerat illo, necessitatibus tenetur quis molestiae dolores consequatur laboriosam.</p ></div>
-    			<div class="col-6"> <img src="../images/m1.png" width="700" height="800" alt=""> </div>
+    			<div class="col-6"> <img src="/static/ss-19-1.jpg" width="670" height="800" alt=""> </div>
 			</div>
 		</div>
 		<!-- Name Two -->
-		<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto">
+		<div class="mx-auto">
 			<div class="row">
-				<div class="col-8"><img src="" alt=""></p></div>
-    			<div class="col-4"> <h2>Name Two</h2><p>Descriptions: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, alias mollitia assumenda! Aspernatur aut harum saepe sapiente, a velit commodi, quaerat illo, necessitatibus tenetur quis molestiae dolores consequatur laboriosam.</p></div></div>
+				<div class="col-6"><img src="/static/ss-19-2.jpg" width="650" height="900" alt=""></p></div>
+    			<div class="col-6 my-auto mx-auto text-center"> <h2 class="col-9 mx-auto text-center">Name Two</h2><p class="col-9 mx-auto text-center">Descriptions: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, alias mollitia assumenda! Aspernatur aut harum saepe sapiente, a velit commodi, quaerat illo, necessitatibus tenetur quis molestiae dolores consequatur laboriosam.</p></div>
 			</div>
 		</div>
-<!-- 	<a id="home"><img class="image_on" src="images/cart_grey.png" alt="logo" /><img class="image_off" src="images/cart_black.png" alt="logo" /></a> -->
 	</div>
 </body>
 </html>
