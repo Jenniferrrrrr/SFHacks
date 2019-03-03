@@ -7,7 +7,3 @@ handlers:
   static_dir: static
 - url: /.*
   script: app.py
-- url: /
-  script: app.py
-- url: /index\.html
-  script: app.py
