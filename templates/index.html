@@ -14,9 +14,10 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+	<div class="container-fluid">
 	<!-- navigation bar -->
 	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand col-1" href="#">Autelier</a>
+			<a class="navbar-brand col-1" href="{{ url_for('home') }}">Autelier</a>
 		<ul class="navbar-nav col-10">
 			<li class="nav-item">
 				<a class="nav-link" href= "{{ url_for('fw19') }}">F/W - 19 Premier</a>
@@ -34,5 +35,6 @@
 			</li>
 		</ul>
 	</nav>
+	</div>
 </body>
 </html>
