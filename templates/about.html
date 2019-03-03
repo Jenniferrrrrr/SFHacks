@@ -20,13 +20,13 @@
 	  	  	<a class="navbar-brand col-1" href="#">Autelier</a>
 	    	<ul class="navbar-nav col-10">
 	      		<li class="nav-item">
-	        	  <a class="nav-link" href="fw19.html">F/W - 19 Premier</a>
+	        	  <a class="nav-link" href="{{ url_for('fw19') }}">F/W - 19 Premier</a>
 	      		</li>
 			    <li class="nav-item">
-			      <a class="nav-link" href="ss19.html">S/S - 19</a>
+			      <a class="nav-link" href="{{ url_for('ss19') }}">S/S - 19</a>
 			    </li>
 			    <li class="nav-item">
-			      <a class="nav-link" href="fw18.html">F/W - 18</a>
+			      <a class="nav-link" href="{{ url_for('fw18') }}">F/W - 18</a>
 			    </li>
 	    	</ul>
 	    	<ul class="navbar-nav col-1">
@@ -37,7 +37,7 @@
 				  </a>
 				</li>
 			    <li class="nav-item active">
-			      <a class="nav-link" href="about.html">About</a>
+			      <a class="nav-link" href="{{ url_for('about') }}">About</a>
 			    </li>
 	    	</ul>
 		</nav> 
